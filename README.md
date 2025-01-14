@@ -69,10 +69,29 @@ As an admin, I want to generate reports on website activity, so that I can under
 
 
 ### User Goals
+[ ] Discover New Music - Visitors want to explore and discover new songs, artists and genres they haven't encountered before. <br>
+[ ] Read Engaging Content <br>
+[ ] Stay updated with Music News <br>
 
+[ ] Personalise their experience - Registered user wish to create and manage their profiles to personalise their experience on the blog. <br>
+[ ] Engage with content. <br>
+[ ] Save favourite posts. <br>
+
+[ ] Share their knowledge - Bloggers want to write and publis blog posts to share their knowledge, insights and opinions about music with readers. <br>
+[ ] Interact with readers. <br>
+[ ] Promote their work. <br>
+
+[ ] Maintain Website Quality - Admins want to monitor and approve new blog posts to ensure the content meets the websites standards. <br>
+[ ] Manage user accounts. <br>
+[ ] Analyze website activity. <br>
 
 ### Site owners goals
-
+1. User-Friendly Interface - Provide a seamless and enjoyable experience for visitors.
+2. High-Quality Content - Ensure the blog remains a reliable source of music information.
+3. Responsive Design - Make the website accessible on all devices, including desktops, tablets, and smartphones.
+4. Community Engagement - Foster a sense of community by encouraging user interactions and providing platforms for discussions.
+5. Regular Updates - Keep the content fresh and up-to-date with regular posts and news updates.
+6. Site Security - Protect the website and its user from security threats.
 
 <hr>
 <p align="right"><a href=“#lyric-lure">Back To Top</a></p>
