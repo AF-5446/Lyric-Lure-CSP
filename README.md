@@ -169,7 +169,8 @@ For the future, I would ...(complete)
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
 
 ## Testing
-
+![Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)<br>
+![Lighthouse](docs/)
 
 <hr>
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
@@ -181,7 +182,14 @@ For the future, I would ...(complete)
 
 ## Credits 
 ### Code Institute
+Project and primary learning supplied by [Code Institute](https://codeinstitute.net.ie)<br>
 
+Supplemental learning resources directly used/ referenced within the project:
+
+- [Bootstrap Docs](https://getbootstrap.com/docs/5.3)
+- [Gemini](https://gemini.google.com) as a learning tool, no code was directly used
+- [Cloudinary](https://cloudinary.com/tools/image-to-webp) to convert images from jpg to webp
+...(complete)
 
 <hr>
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
