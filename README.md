@@ -39,6 +39,29 @@ Lyric Lure is a Music blog website, designed to cover a wide range of music rela
 
 ## User Experience (UX)
 ### User Stories
+As a visitor, I want to read blog posts, so that I can learn new information and enjoy interesting content.
+
+As a visitor, I want to search for specific topics or keywords, so that I can find blog posts that interest me.
+
+As a visitor, I want to navigate easily through the website, so that I can find what I'm looking for without frustration.
+
+As a registered user, I want to create a profile, so that I can customize my experience on the blog website.
+
+As a registered user, I want to leave comments on blog posts, so that I can engage with the content and the community.
+
+As a registered user, I want to save my favorite blog posts, so that I can easily find and revisit them later.
+
+As a blogger, I want to write and publish blog posts, so that I can share my knowledge and ideas with readers.
+
+As a blogger, I want to edit and update my existing posts, so that I can keep my content accurate and relevant.
+
+As a blogger, I want to respond to comments on my posts, so that I can engage with my readers and build a community.
+
+As an admin, I want to manage user accounts, so that I can ensure the community remains safe and respectful.
+
+As an admin, I want to monitor and approve new blog posts, so that I can maintain the quality of the content on the site.
+
+As an admin, I want to generate reports on website activity, so that I can understand how users are interacting with the site and make improvements.
 
 
 <hr>
