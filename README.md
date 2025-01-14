@@ -126,7 +126,7 @@ As an admin, I want to generate reports on website activity, so that I can under
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
 
 ## Imagery
-To best represent the website, and the ability music has to incorporate all walks of life, colour schemes were harder to choose, as music can represent every colour in the world. This then reflected in the imagery used, as trying to keep things neutral for new users/ visitors, but still entice return visits can prove difficult, which is why extensive searches through search engines like [google](https://google.com/), and getting others opinions through websites like [Reddit](https://Reddit.com/) (an open interactive forum) were obtained to style the page.
+To best represent the website, and the ability music has to incorporate all walks of life, colour schemes were harder to choose, as music can represent every colour in the world. This then reflected in the imagery used, as trying to keep things neutral for new users/ visitors, but still entice return visits can prove difficult, which is why extensive searches through search engines like [Google](https://google.com/), and getting others opinions through websites like [Reddit](https://Reddit.com/) (an open interactive forum) were obtained to style the page.
 
 The main image seen when the website is opened, represented the way I wanted to portray the site, [seen here](docs/)
 
@@ -145,9 +145,15 @@ For the future, I would ...(complete)
 
 ## Technologies used
 ### Technologies and languages used
+![Static Badge](https://img.shields.io/badge/HTML5-Language-grey?logo=html5&logoColor=%23ffffff&color=%23E34F26)
+![Static Badge](https://img.shields.io/badge/CSS3-Language-grey?logo=css3&logoColor=%23ffffff&color=%231572B6)
+![Static Badge](https://img.shields.io/badge/Python%20-%20Language%20-%20blue?logo=python&logoColor=ffffff&color=yellow)
+![Static Badge](https://img.shields.io/badge/Javascript%20-%20Language%20-%20charcoal?logo=Javascript&logoColor=ffffff&color=%23323330)
 
-
-
+<a href="https://git-scm.com/" target=_blank_>![Static Badge](https://img.shields.io/badge/Git-v2.46.2-grey?logo=git&logoColor=%23ffffff&color=%23F05032)</a>
+<a href="https://github.com/" target="_blank">![Static Badge](https://img.shields.io/badge/GitHub-Repo_Hosting-white?logo=github&logoColor=%23ffffff&color=%23181717)</a>
+<a href="https://www.gitpod.io/" target="_blank">![Static Badge](https://img.shields.io/badge/Gitpod-IDE-white?logo=gitpod&logoColor=%23ffffff&color=%23FFAE33)</a>
+<a href="https://www.djangoproject.com/" target="_blank">![Static Badge](https://img.shields.io/badge/Django%20-%20Framework%20-%20green?logo=Django&logoColor=ffffff&color=%230d432f)</a>
 
 <hr>
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
