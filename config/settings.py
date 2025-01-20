@@ -32,7 +32,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '.herokuapp.com', 'https://blog-csp-91070848f48d.herokuapp.com/', 'https://blog-csp-91070848f48d.herokuapp.com/',]
 
-CSRF_TRUSTED_ORIGINS = []
+CSRF_TRUSTED_ORIGINS = ["https://*.codeinstitute-ide.net", "https://*.herokuapp.com",]
 
 # Application definition
 
