@@ -28,7 +28,7 @@ if os.path.isfile('env.py'):
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '.herokuapp.com', 'blog-csp-91070848f48d.herokuapp.com', '8000-af5446-lyriclurecsp-jjuhe9q946o.ws.codeinstitute-ide.net', 'https://8000-af5446-lyriclurecsp-jjuhe9q946o.ws.codeinstitute-ide.net/']
 
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
