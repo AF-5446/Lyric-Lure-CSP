@@ -6,28 +6,22 @@ body {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
-}
-
-.red-o {
-    color: #E84610;
-}
-
-.thin {
-    font-weight: 300;
-}
-
-.light-bg {
-    background-color: #fff;
+    color: #ffffff;
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #120727;
+    color: #ffffff;
 }
 
-.main-bg {
-    background-color: #F9FAFC;
+.med-bg {
+    background-color: #5683b3;
+    color: #ffffff;
 }
+
+/* .main-bg {
+    background-color: #F9FAFC;
+} */
 
 .card {
     border: none;
@@ -43,11 +37,12 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #188181;
+    background-color: #a26753;
 }
 
 .scale {
     width: 100%;
+    left: 40px;
     height: auto;
 }
 
@@ -93,7 +88,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #13201a;
 }
 
 .post-link:hover,
@@ -130,7 +125,7 @@ body {
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: #13201a;
     text-decoration: underline;
 }
 
