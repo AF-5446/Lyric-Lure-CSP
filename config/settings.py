@@ -28,9 +28,9 @@ if os.path.isfile('env.py'):
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '.herokuapp.com', 'blog-csp-91070848f48d.herokuapp.com', '8000-af5446-lyriclurecsp-jjuhe9q946o.ws.codeinstitute-ide.net', 'https://8000-af5446-lyriclurecsp-jjuhe9q946o.ws.codeinstitute-ide.net/']
+ALLOWED_HOSTS = ['localhost', '.herokuapp.com', 'blog-csp-91070848f48d.herokuapp.com', '8000-af5446-lyriclurecsp-jjuhe9q946o.ws.codeinstitute-ide.net', '8000-af5446-lyriclurecsp-jjuhe9q946o.ws.codeinstitute-ide.net/',]
 
 CSRF_TRUSTED_ORIGINS = ["https://*.codeinstitute-ide.net", "https://*.herokuapp.com",]
 
