@@ -18,23 +18,32 @@
   <div class="row">
     <div class="col text-right">
       <!-- Updated on field goes in here -->
-
-      <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+      <p class="text-end">
+        <em>
+          Updated on: {{ about.updated_on }}
+        </em>
+      </p>
     </div>
   </div>
   <div class="row justify-content-center">
     <div class="col-12 col-md-6 my-5">
-      <h2>Let's Collaborate!</h2>
-      <p>I wholeheartedly embrace the power of shared knowledge and collaboration.
+      <h2>
+        Let's Collaborate!
+      </h2>
+      <p>
+        I wholeheartedly embrace the power of shared knowledge and collaboration.
         Whether you have a project idea, want to co-author an article, or just
         feel like brainstorming some fresh ideas, I'm thrilled to connect with you.
-        Simply fill out the form, and let's get started!</p>
+        Simply fill out the form, and let's get started!
+      </p>
 
       <!-- add form here -->
       <form method="post">
         {{ collaborate_form | crispy }}
         {% csrf_token %}
-        <button class="btn btn-secondary" type="submit">Submit</button>
+        <button class="btn btn-secondary" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   </div>
