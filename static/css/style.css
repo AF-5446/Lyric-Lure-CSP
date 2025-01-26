@@ -160,8 +160,8 @@ body {
 
 .btn-signup,
 .btn-edit {
-    background-color: #188181;
-    color: #fff;
+    background-color: #F59F42;
+    color: #1f1f1f;
 }
 
 .btn-signup:hover,
@@ -205,4 +205,86 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+    
+    /* Card adjustments */
+    .card-mast {
+        margin-top: 10px;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Masthead mobile adjustments */
+    .masthead {
+        height: 50vh;
+        min-height: 300px;
+        
+    }
+
+    .masthead-image,
+    .masthead-image img {
+        height: 100%;
+        object-position: center 85%; /* Show more bottom on mobile */
+    }
+
+    /* Force image display */
+    .masthead-image {
+        display: block !important;
+    }
+
+    /* Card adjustments */
+    .card-mast {
+        margin-top: 30px;
+        background-color: rgba(255, 255, 255, 0.8); /* More opaque on mobile */
+        color: #1f1f1f;
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    /* Text container adjustments */
+    .masthead-text {
+        bottom: 15%;
+        padding: 1rem;
+        opacity: 0.7; /* More visible on mobile */
+        width: 95%;
+    }
+
+    /* Post title adjustments */
+    .post-title {
+        
+        margin-left: 0;
+        font-size: 1.8rem;
+    }
+
+    .post-subtitle {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    /* Fix image scaling */
+    .scale {
+        left: 0; /* Remove horizontal offset */
+    }
+}
+
+@media (max-width: 576px) {
+    /* Extra small devices */
+    .masthead {
+        height: 40vh;
+        min-height: 250px;
+    }
+
+    .masthead-image,
+    .masthead-image img {
+        height: 40vh;
+    }
+
+    .card-mast {
+        margin-top: 20px;
+        padding: 1rem;
+    }
 }
