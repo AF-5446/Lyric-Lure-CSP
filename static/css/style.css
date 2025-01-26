@@ -21,7 +21,7 @@ body {
  
 .dark-bg {
     background-color: #F59F42;
-    color: #ffffff;
+    color: #1f1f1f;
 }
 
 .med-bg {
@@ -36,6 +36,12 @@ body {
 .card {
     border: none;
     background-color: transparent;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    margin-top: 200px;
 }
 
 .image-container {
@@ -64,7 +70,7 @@ body {
 
 .masthead {
     margin-top: 10px;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
     display: inline-block;
     height: 33vh;
@@ -75,11 +81,21 @@ body {
     background-color: #f59f42;
     color: black;
     position: relative;
+    z-index: 2;
+    padding-bottom: 10%;
+    max-width: 800px;
+    margin: 0 auto;
+    top: 50%;
 }
 
 .masthead-image {
     position: relative;
-    overflow: clip;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
 }
 
 .masthead-image:after { /* Blog title colour and design */
@@ -87,12 +103,12 @@ body {
     position: absolute;
     top: 0;
     right: 90%;
-    height: 100%;
-    width: 150%;
+    height: 70%;
+/*    width: 150%; */
     background: #b3d979;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
+/*    -webkit-transform: skew(15deg); */
+/*    -moz-transform: skew(15deg); */
+/*    transform: skew(15deg); */
     z-index: 100;
 }
 
@@ -107,7 +123,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #f59f42;
+    color: #7b3f00;
 }
 
 .post-title {
