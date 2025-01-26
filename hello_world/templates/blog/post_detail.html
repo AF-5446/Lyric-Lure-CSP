@@ -11,8 +11,8 @@
                 <!-- Post author goes before the | the post's created date goes after -->
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="{% static 'images/Records.webp' %}" class="scale" alt="placeholder">
+            <div class="col-md-6 masthead-image">
+                <img src="{% static 'images/record-player.webp' %}" class="img-fluid" alt="placeholder">
             </div>
         </div>
     </div>
@@ -20,8 +20,8 @@
 
 <div class="container">
     <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
-            <div class="card-body">
+        <div class="col card mb-4 mt-3 left top">
+            <div class="card-mast">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
                 <p class="card-text">
@@ -45,7 +45,7 @@
     <div class="row">
         <div class="col-md-8 card mb-4 mt-3">
             <h3>Comments:</h3>
-            <div class="card-body">
+            <div class="card-mast">
                 <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
                 {% for comment in comments %}
                 <div class="p-2 comments
@@ -75,7 +75,7 @@
         </div>
         <!-- Creating New Comments -->
         <div class="col-md-4 card mb-4 mt-3">
-            <div class="card-body">
+            <div class="card-mast">
                 {% if user.is_authenticated %}
                 <h3>Leave a comment:</h3>
                 <p>Posting as: {{ user.username }}</p>
