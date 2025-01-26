@@ -70,6 +70,7 @@ CLOUDINARY_STORAGE = {
     'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
     'SECURE': True,  # ← THIS IS CRUCIAL
     'CDN_SUBDOMAIN': True,
+    'API_PROXY': 'https://res.cloudinary.com'
 }
 
 MIDDLEWARE = [
