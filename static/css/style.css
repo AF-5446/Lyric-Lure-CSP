@@ -96,6 +96,10 @@ body {
     z-index: 100;
 }
 
+.profile-image, .featured-image {
+    width: 75%;
+}
+
 .post-link {
     text-decoration: none;
     color: #13201a;
