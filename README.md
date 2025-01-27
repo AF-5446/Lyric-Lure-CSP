@@ -195,6 +195,7 @@ Supplemental learning resources directly used/ referenced within the project:
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
 
 ### Content Research
+When thinking about the name for the blog, and how in particular it can make a story in the lyrics, and how many people can be attracted to the sounds/ lyrics when there are street buskers (for example), I had the thought about the Pied Piper, a story from childhood about at first luring away a problem for villagers, who then eventually (unfortunately for the story), lured away the villagers children. The decision to use "Lyric Lure" was aimed at drawing visitors to the site to talk all things music, imitating the story of the Pied Piper, (without the dark twist) which also then led to using the logo photo [seen here](static/images/apple-touch-icon.png). 
 
 <hr>
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
