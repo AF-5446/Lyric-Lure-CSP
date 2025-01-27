@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseForbidden
 from .models import About, ContactMessage, NewsletterSubscriber, UserProfile # Import models
-from .forms import ContactMessageForm, NewsletterSignupForm
+from .forms import ContactMessageForm, NewsletterSignupForm, ProfileForm
 
 def about(request):
     """Render the About page with separate forms."""
@@ -42,4 +43,47 @@ def about(request):
 
     return render(request, "about/about.html", {
         "user_profile": user_profile,
+    })
+
+def about(request):
+    User_profile = None
+    if request.user.is_authenticated:
+        user_profile, created = UserProfile.objects.get_or_create(user=request.user)
+
+        if request.method == 'POST':
+            form = ProfileForm(request.POST, request.FILES, instance=user_profile)
+            if form.is_valid():
+                form.save()
+            
+        else:
+            form = ProfileForm(instance=user_profile)
+    
+    return render(request, "about/about.html", {
+        "user_profile": user_profile,
+        "form": form if request.user.is_authenticated else None,
+    })
+
+def about(request):
+    about_content = About.objects.first()
+
+    user_profile = None
+    form = None
+
+    if request.user.is_authenticated:
+        try:
+            user_profile = UserProfile.objects.get(user=request.user)
+        except UserProfile.DoesNotExist:
+            user_profile = UserProfile(user=request.user)
+
+        if request.method == 'POST':
+            form = ProfileForm(request.POST, request.FILES, instance=user_profile)
+            if form.is_valid():
+                form.save()
+        else:
+            form = ProfileForm(instance=user_profile)
+        
+    return render(request, "about/about.html", {
+        "about": about_content,
+        "user_profile": user_profile,
+        "form": form,
     })
