@@ -94,7 +94,7 @@ As an admin, I want to generate reports on website activity, so that I can under
 6. Site Security - Protect the website and its user from security threats.
 
 <hr>
-<p align="right"><a href=“#lyric-lure">Back To Top</a></p>
+<p align="right"><a href="#lyric-lure">Back To Top</a></p>
 
 ## Design
 ### Colour Scheme
@@ -102,16 +102,16 @@ As an admin, I want to generate reports on website activity, so that I can under
 
 ### Main Palette
 <hr>
-<p align="right"><a href=“#lyric-lure">Back To Top</a></p>
+<p align="right"><a href="#lyric-lure">Back To Top</a></p>
 
 ### Typography
 <hr>
-<p align="right"><a href=“#lyric-lure">Back To Top</a></p>
+<p align="right"><a href="#lyric-lure">Back To Top</a></p>
 
 ### Wireframes
 
 <hr>
-<p align="right"><a href=“#lyric-lure">Back To Top</a></p>
+<p align="right"><a href="#lyric-lure">Back To Top</a></p>
 
 **Desktop Wireframe** <br>
 ![Desktop wireframe](docs/)
@@ -189,17 +189,21 @@ Supplemental learning resources directly used/ referenced within the project:
 - [Bootstrap Docs](https://getbootstrap.com/docs/5.3)
 - [Gemini](https://gemini.google.com) as a learning tool, no code was directly used
 - [Cloudinary](https://cloudinary.com/tools/image-to-webp) to convert images from jpg to webp
-...(complete)
+- [Deep Seek](https://chat.deepseek.com/) AI Chatbot which had a feature that went more in depth, with the chance of looking at the "thought process" before offering a solution.
 
 <hr>
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
 
 ### Content Research
+When thinking about the name for the blog, and how in particular it can make a story in the lyrics, and how many people can be attracted to the sounds/ lyrics when there are street buskers (for example), I had the thought about the Pied Piper, a story from childhood about at first luring away a problem for villagers, who then eventually (unfortunately for the story), lured away the villagers children. The decision to use "Lyric Lure" was aimed at drawing visitors to the site to talk all things music, imitating the story of the Pied Piper, (without the dark twist) which also then led to using the logo photo [seen here](static/images/apple-touch-icon.png). 
 
 <hr>
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
 
 ### Acknowledgments
+
+A huge thank you to Kirsten for input in the colour schemes,<br>
+To the people on [Reddit]() and [Quora](https://www.quora.com/What-colour-or-colours-do-you-associate-with-music) (Particulary these posts) for offering their input as to how music sounds/ looks to them. An interesting insight into those who experience Synesthesia
 
 <hr>
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
