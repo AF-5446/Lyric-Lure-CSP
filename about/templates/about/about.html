@@ -33,23 +33,50 @@
   <div class="row justify-content-center">
     <div class="col-12 col-md-6 my-5">
       <h2>
-        Let's Collaborate!
+        Stay in touch!
       </h2>
       <p>
-        I wholeheartedly embrace the power of shared knowledge and collaboration.
-        Whether you have a project idea, want to co-author an article, or just
-        feel like brainstorming some fresh ideas, I'm thrilled to connect with you.
-        Simply fill out the form, and let's get started!
+        Like my content? Want to stay up to date with my latest posts? Sign up or send me a message!
       </p>
 
-      <!-- add form here -->
-      <form method="post">
-        {{ collaborate_form | crispy }}
-        {% csrf_token %}
-        <button class="btn btn-secondary" type="submit">
-          Submit
-        </button>
-      </form>
+      <!-- Forms -->
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+        <form method="post">
+          {% csrf_token %}
+          <!-- Render fields individually -->
+          <div class="form-field">
+            {{ contact_form.name.label_tag }}
+            {{ contact_form.name }}
+            {{ contact_form.name.errors }}
+          </div>
+          <div class="form-field">
+            {{ contact_form.email.label_tag }}
+            {{ contact_form.email }}
+            {{ contact_form.email.errors }}
+          </div>
+          <div class="form-field">
+            {{ contact_form.message.label_tag }}
+            {{ contact_form.message }}
+            {{ contact_form.message.errors }}
+          </div>
+          <button type="submit" name="contact_submit" class="btn">Send Message</button>
+        </form>
+      </div>
+      <!-- Newsletter Form -->
+      <div class="newsletter-form">
+        <h3>Join Our Newsletter</h3>
+        <form method="post">
+          {% csrf_token %}
+          <div class="form-field">
+            {{ newsletter_form.email.label_tag }}
+            {{ newsletter_form.email }}
+            {{ newsletter_form.email.errors }}
+          </div>
+          <button type="submit" name="newsletter_submit" class="btn">Sign Up</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>

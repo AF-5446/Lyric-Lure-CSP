@@ -4,18 +4,27 @@ from cloudinary.models import CloudinaryField
 # Create your models here.
 class About(models.Model):
     title = models.CharField(max_length=200)
-    profile_image = CloudinaryField('image', default='placeholder')
-    updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
+    updated_on = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.title
-    
-class CollaborateRequest(models.Model):
-    name = models.CharField(max_length=200)
+
+# Model for "Send a Message" form
+class ContactMessage(models.Model):
+    name = models.CharField(max_length=100)
     email = models.EmailField()
-    message = models.TextField()
-    read = models.BooleanField(default=False)
+    message = models.TextField()  # <-- Critical: Ensure this exists!
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"Collaboration request from {self.name}"
+        return f"Message from {self.name}"
+
+# Model for Newsletter Signup
+class NewsletterSubscriber(models.Model):
+    email = models.EmailField(unique=True)  # Prevent duplicate signups
+    name = models.CharField(max_length=100)
+    subscribed_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.email

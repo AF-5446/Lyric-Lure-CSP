@@ -1,21 +1,34 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib import messages
-from .models import About
-from .forms import CollaborateForm
+from .models import About, ContactMessage, NewsletterSubscriber  # Import models
+from .forms import ContactMessageForm, NewsletterSignupForm
 
-# Create your views here.
 def about(request):
-    """
-    Renders the About page.
-    """
+    """Render the About page with separate forms."""
+    about_instance = About.objects.first()  # Simplified query
 
-    if request.method == "POST":
-        collaborate_form = CollaborateForm(data=request.POST)
-        if collaborate_form.is_valid():
-            collaborate_form.save()
-            messages.add_message(request, messages.SUCCESS, "Collaboration request received! I endeavour to respond within 2 working days.")
+    # Initialize empty forms (for GET requests)
+    contact_form = ContactMessageForm()
+    newsletter_form = NewsletterSignupForm()
 
-    about = About.objects.all().order_by('-updated_on').first()
-    collaborate_form = CollaborateForm()
+    # Handle Contact Form Submission
+    if 'contact_submit' in request.POST:
+        contact_form = ContactMessageForm(request.POST)
+        if contact_form.is_valid():
+            contact_form.save()
+            messages.success(request, "Message sent! We'll respond soon.")
+            return redirect('about')  # Redirect to clear POST data
 
-    return render(request, "about/about.html", {"about": about, "collaborate_form": collaborate_form},)
+    # Handle Newsletter Form Submission
+    elif 'newsletter_submit' in request.POST:
+        newsletter_form = NewsletterSignupForm(request.POST)
+        if newsletter_form.is_valid():
+            newsletter_form.save()
+            messages.success(request, "Thanks for signing up!")
+            return redirect('about')
+
+    return render(request, "about/about.html", {
+        "about": about_instance,
+        "contact_form": contact_form,
+        "newsletter_form": newsletter_form,
+    })
