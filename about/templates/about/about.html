@@ -4,6 +4,7 @@
 
 {% block content %}
 <div class="container mt-5">
+  <!-- Public About Content (shown to everyone) -->
   <div class="row">
     <div class="col-12 col-md-4 text-center">
       <!-- Image goes in here -->
@@ -20,25 +21,53 @@
       {{ about.content | safe }}
     </div>
   </div>
-  <div class="row">
-    <div class="col text-right">
-      <!-- Updated on field goes in here -->
-      <p class="text-end">
-        <em>
-          Updated on: {{ about.updated_on }}
-        </em>
-      </p>
+  {% if user.is_authenticated %}
+  <!-- NEW ADDITION -- PROFILE SECTION -->
+  <div class="profile-section mt-4">
+    <h2>Your Profile</h2>
+    <div class="row">
+      <div class="col-12 col-md-4 text-right">
+        <!-- Profile Avatar -->
+        {% if user_profile.avatar %}
+        <img src="{{user_profile.avatar.url}}" class="profile-avatar" alt="Profile Picture">
+        {% else %}
+        <img src="{% static 'images/nobody.jpg' %}" class="profile-avatar" alt="Default Profile">
+        {% endif %}
+      </div>
+      <div class="col-12 col-md-8">
+        <!-- Profile Bio -->
+        <p class="profile-bio">
+          {% if user_profile.bio %}
+          {{ user_profile.bio }}
+          {% else %}
+          No bio added yet.
+          {% endif %}
+        </p>
+      </div>
+    </div>
+    <div class="profile-edit-form mt-4">
+      <h3>
+        Edit Profile
+      </h3>
+      <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+      </form>
+      <button type="submit" class="btn btn-primary btn-edit">Update Profile</button>
     </div>
   </div>
+  {% endif %}
+
+
   <div class="row justify-content-center">
     <div class="col-12 col-md-6 my-5">
+      {% if user.is_authenticated %}
       <h2>
         Stay in touch!
       </h2>
       <p>
         Like my content? Want to stay up to date with my latest posts? Sign up or send me a message!
       </p>
-
       <!-- Forms -->
       <!-- Contact Form -->
       <div class="contact-form">
@@ -46,7 +75,7 @@
         <form method="post">
           {% csrf_token %}
           <!-- Render fields individually -->
-           <!-- Name Field-->
+          <!-- Name Field-->
           <div class="form-field requiredField mb-3">
             {{ contact_form.name.label_tag }}
             {{ contact_form.name }}
@@ -80,7 +109,16 @@
           <button type="submit" name="newsletter_submit" class="btn btn-secondary btn-edit">Sign Up</button>
         </form>
       </div>
+      {% else %}
+      <div class="row justify-content-center mt-5">
+        <div>
+          <h1><strong>Sign in to view your Profile!</strong></h1>
+          <a href="{% url 'account_login' %}" class="btn btn-primary btn-edit">Log In</a>
+          <a href="{% url 'account_signup' %}" class="btn btn-secondary btn-edit">Sign Up</a>
+        </div>
+      </div>
+      {% endif %}
     </div>
   </div>
-</div>
-{% endblock content %}
+
+  {% endblock content %}

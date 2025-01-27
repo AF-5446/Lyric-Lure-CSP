@@ -1,6 +1,6 @@
 # about/forms.py
 from django import forms
-from .models import ContactMessage, NewsletterSubscriber
+from .models import ContactMessage, NewsletterSubscriber, UserProfile
 
 class ContactMessageForm(forms.ModelForm):
     # Explicitly define fields to control order and widgets
@@ -30,3 +30,8 @@ class NewsletterSignupForm(forms.ModelForm):
     class Meta:
         model = NewsletterSubscriber
         fields = ['name', 'email' ]
+
+class ProfileForm(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ['bio', 'avatar']
