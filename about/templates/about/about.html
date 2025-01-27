@@ -20,6 +20,7 @@
       {{ about.content | safe }}
     </div>
   </div>
+  {% if user.is_authenticated %}
   <div class="row">
     <div class="col text-right">
       <!-- Updated on field goes in here -->
@@ -30,7 +31,6 @@
       </p>
     </div>
   </div>
-  {% if user.is_authenticated %}
   <div class="row justify-content-center">
     <div class="col-12 col-md-6 my-5">
       <h2>
@@ -83,7 +83,7 @@
       </div>
       {% else %}
       <div class="row justify-content-center">
-        You are not signed in! Sign up or log in!
+        <h1><strong>You are not signed in! Sign up or log in to edit your Profile!</strong></h1>
       </div>
       {% endif %}
     </div>
