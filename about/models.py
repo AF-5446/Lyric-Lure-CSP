@@ -8,7 +8,7 @@ class About(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.title
+        return f"About me for {self.title}"
 
 # Model for "Send a Message" form
 class ContactMessage(models.Model):
