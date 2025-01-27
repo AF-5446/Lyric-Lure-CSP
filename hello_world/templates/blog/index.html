@@ -15,9 +15,9 @@
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top img-fluid" src="{% static 'images/default.jpg' %}" class="featured-image"
-                                    alt="placeholder image">
+                                    alt="placeholder image" loading="lazy">
                                 {% else %}
-                                <img class="card-img-top img-fluid" src="{{ post.featured_image.url }}" class="featured-image" alt="{{ post.title }}">
+                                <img class="card-img-top img-fluid" src="{{ post.featured_image.url }}" class="featured-image" alt="{{ post.title }}" loading="lazy">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
