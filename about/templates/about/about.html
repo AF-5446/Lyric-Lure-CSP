@@ -46,35 +46,38 @@
         <form method="post">
           {% csrf_token %}
           <!-- Render fields individually -->
-          <div class="form-field">
+           <!-- Name Field-->
+          <div class="form-field requiredField mb-3">
             {{ contact_form.name.label_tag }}
             {{ contact_form.name }}
             {{ contact_form.name.errors }}
           </div>
-          <div class="form-field">
+          <!-- Email Field-->
+          <div class="form-field requiredField mb-3">
             {{ contact_form.email.label_tag }}
             {{ contact_form.email }}
             {{ contact_form.email.errors }}
           </div>
-          <div class="form-field">
+          <!-- Message Field-->
+          <div class="form-field requiredField mb-3">
             {{ contact_form.message.label_tag }}
             {{ contact_form.message }}
             {{ contact_form.message.errors }}
           </div>
-          <button type="submit" name="contact_submit" class="btn">Send Message</button>
+          <button type="submit" name="contact_submit" class="btn btn-secondary btn-edit">Send Message</button>
         </form>
       </div>
       <!-- Newsletter Form -->
-      <div class="newsletter-form">
+      <div class="newsletter-form mt-3">
         <h3>Join Our Newsletter</h3>
         <form method="post">
           {% csrf_token %}
-          <div class="form-field">
+          <div class="form-field mb-3">
             {{ newsletter_form.email.label_tag }}
             {{ newsletter_form.email }}
             {{ newsletter_form.email.errors }}
           </div>
-          <button type="submit" name="newsletter_submit" class="btn">Sign Up</button>
+          <button type="submit" name="newsletter_submit" class="btn btn-secondary btn-edit">Sign Up</button>
         </form>
       </div>
     </div>
