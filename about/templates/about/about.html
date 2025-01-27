@@ -50,7 +50,7 @@
       <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         <!-- Bio Field -->
-        <div class="form-group mb-3">
+        <div class="form-field mb-3">
           <label for="{{ profile_form.bio.id_for_label }}">Bio:</label>
           {{ profile_form.bio }}
           {{ profile_form.bio.errors }}

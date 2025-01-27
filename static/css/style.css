@@ -17,7 +17,11 @@ body {
 .navbar-text, .nav-item, .nav-link {
     color: #ffffff !important;
 }
- 
+
+.navbar-toggler-icon {
+    background-color: blueviolet;
+}
+
 .dark-bg {
     background-color: #46067a;
     color: #ffffff;
