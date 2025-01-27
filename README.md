@@ -128,7 +128,7 @@ As an admin, I want to generate reports on website activity, so that I can under
 ## Imagery
 To best represent the website, and the ability music has to incorporate all walks of life, colour schemes were harder to choose, as music can represent every colour in the world. This then reflected in the imagery used, as trying to keep things neutral for new users/ visitors, but still entice return visits can prove difficult, which is why extensive searches through search engines like [Google](https://google.com/), and getting others opinions through websites like [Reddit](https://Reddit.com/) (an open interactive forum) were obtained to style the page.
 
-The main image seen when the website is opened, represented the way I wanted to portray the site, [seen here](docs/)
+The main image seen when the website is opened, represented the way I wanted to portray the site, [seen here](static/images/android-chrome-512x512.png) and [here](static/images/record-player.webp)
 
 <hr>
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
