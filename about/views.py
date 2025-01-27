@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from .models import About, ContactMessage, NewsletterSubscriber  # Import models
+from django.contrib.auth.decorators import login_required
+from .models import About, ContactMessage, NewsletterSubscriber, UserProfile # Import models
 from .forms import ContactMessageForm, NewsletterSignupForm
 
 def about(request):
@@ -31,4 +32,14 @@ def about(request):
         "about": about_instance,
         "contact_form": contact_form,
         "newsletter_form": newsletter_form,
+    })
+
+def about(request):
+    # For logged-in users: Fetch their profile
+    user_profile = None
+    if request.user.is_authenticated:
+        user_profile, created = UserProfile.objects.get_or_create(user=request.user)
+
+    return render(request, "about/about.html", {
+        "user_profile": user_profile,
     })
