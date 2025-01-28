@@ -3,6 +3,10 @@ html {
     scroll-padding-top: 80px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+  }
+
 body {
     background-color: #46067a;
 }
@@ -129,11 +133,6 @@ body {
     top: 0;
     right: 90%;
     height: 70%;
-/*    width: 150%; */
-    background: #b3d979;
-/*    -webkit-transform: skew(15deg); */
-/*    -moz-transform: skew(15deg); */
-/*    transform: skew(15deg); */
     z-index: 100;
 }
 
@@ -211,11 +210,11 @@ body {
 }
 
 .faded {
-    color: rgb(172, 175, 175);
+    color: rgb(73, 3, 10);
 }
 
 .approval {
-    color: rgb(222, 146, 168);
+    color: rgb(3, 55, 46);
 }
 
 /* Media queries */
