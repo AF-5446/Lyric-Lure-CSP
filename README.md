@@ -28,6 +28,7 @@ Lyric Lure is a Music blog website, designed to cover a wide range of music rela
     * [Deployment](#deploy)
 
 * [Testing](#testing)
+    * [Bugs](#bugs)
 
 * [Credits](#credits)
     * [Code Used](#code-used)
@@ -98,9 +99,13 @@ As an admin, I want to generate reports on website activity, so that I can under
 
 ## Design
 ### Colour Scheme
-Whilst considering a colour scheme, it became clear how difficult it would be to pick definite colours. Plenty on research went into simple searches like [best blog websites](https://www.wix.com/blog/best-blog-templates?utm_source=google&utm_medium=cpc&utm_campaign=13774768257^126077909722^search%20-%20dsa&experiment_id=^^531699814067^&gad_source=1&gclid=Cj0KCQiA4fi7BhC5ARIsAEV1YiYmhcbyUgQV53EQWtKFECFJyiyQbh-7VkzSNuWH44GIaxg8jE9G9i0aAl7rEALw_wcB) and from there, I was able to spiral into other websites such as [Reddit](https://reddit.com)
+Whilst considering a colour scheme, it became clear how difficult it would be to pick definite colours. Plenty on research went into simple searches like [best blog websites](https://www.wix.com/blog/best-blog-templates?utm_source=google&utm_medium=cpc&utm_campaign=13774768257^126077909722^search%20-%20dsa&experiment_id=^^531699814067^&gad_source=1&gclid=Cj0KCQiA4fi7BhC5ARIsAEV1YiYmhcbyUgQV53EQWtKFECFJyiyQbh-7VkzSNuWH44GIaxg8jE9G9i0aAl7rEALw_wcB) and from there, I was able to spiral into other websites such as [Reddit](https://reddit.com) and [Quora](https://quora.com).
 
 ### Main Palette
+The palette I chose to contrast fonts to background due to the background colours I chose, had to remain simple - black and white. However, once everything was in place, I was able to experiment and try differnt shades, seeing that still darker colours worked for the main pages colour scheme. <br>
+
+I couldnt decide on specific colours except for a specific type - vibrant (or what I deem to be).
+
 <hr>
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
 
@@ -138,7 +143,7 @@ The main image seen when the website is opened, represented the way I wanted to 
 Keeping the fulfilment criteria in mind, the page consists of ...(complete) including links to different websites, further resources and even ticket booking websites.
 
 ### Future Implementation
-For the future, I would ...(complete)
+For the future, I would ...(complete) - Spotify API, ticketmaster/ bands in town api. the design of []() also really stood out to me, which is a design I would like to persue with my own effects.
 
 <hr>
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
@@ -170,7 +175,7 @@ For the future, I would ...(complete)
 
 ## Testing
 An excellent tool to use, hidden in Google is [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview). Lighthouse is an open-source, automated tool to help you improve the quality of web pages. <br>
-It shows you where to improve in 4 sections: Performance, Accessibility, Best practices and SEO
+It shows you where to improve in 4 sections: Performance, Accessibility, Best practices and SEO. <br>
 ![Lighthouse](docs/)
 
 <hr>
