@@ -17,7 +17,11 @@ body {
 .navbar-text, .nav-item, .nav-link {
     color: #ffffff !important;
 }
- 
+
+.navbar-toggler-icon {
+    background-color: blueviolet;
+}
+
 .dark-bg {
     background-color: #46067a;
     color: #ffffff;
@@ -166,6 +170,7 @@ body {
 .btn-edit {
     background-color: #46067a;
     color: #F59F42;
+    border: none;
 }
 
 .btn-signup:hover,
@@ -173,6 +178,7 @@ body {
 .btn-edit:hover {
     background-color: #F59F42;
     color: #46067a;
+    border: none;
 }
 
 .link {
