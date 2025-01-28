@@ -2,9 +2,9 @@
 Lyric Lure is a Music blog website, designed to cover a wide range of music related topics, appealing to different kinds of music lovers. Music reviews, artist interviews and profiles, concert & festival coverage, recommended music and playlists, photo galleries of concerts/ artists, cultural impacts, comment sections and content.
 
 <p align="center">
-<a href="" target="_blank">Live project</a>
+<a href="https://blog-csp-91070848f48d.herokuapp.com/" target="_blank">Live project</a>
 
-![amiresponsive](docs/)
+![amiresponsive](docs/wireframes/air-csp.png)
 
 ## Contents
 * [User Experience](#user-experience-ux)
@@ -98,7 +98,7 @@ As an admin, I want to generate reports on website activity, so that I can under
 
 ## Design
 ### Colour Scheme
-
+Whilst considering a colour scheme, it became clear how difficult it would be to pick definite colours. Plenty on research went into simple searches like [best blog websites](https://www.wix.com/blog/best-blog-templates?utm_source=google&utm_medium=cpc&utm_campaign=13774768257^126077909722^search%20-%20dsa&experiment_id=^^531699814067^&gad_source=1&gclid=Cj0KCQiA4fi7BhC5ARIsAEV1YiYmhcbyUgQV53EQWtKFECFJyiyQbh-7VkzSNuWH44GIaxg8jE9G9i0aAl7rEALw_wcB) and from there, I was able to spiral into other websites such as [Reddit](https://reddit.com)
 
 ### Main Palette
 <hr>
@@ -114,13 +114,13 @@ As an admin, I want to generate reports on website activity, so that I can under
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
 
 **Desktop Wireframe** <br>
-![Desktop wireframe](docs/)
+![Desktop wireframe](docs/wireframes/)
 
 **Tablet Wireframe** <br>
-![Tablet wireframe](docs/)
+![Tablet wireframe](docs/wireframes/)
 
 **Mobile Wireframe** <br>
-![Mobile wireframe](docs/)
+![Mobile wireframe](docs/wireframes/)
 
 <hr>
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
@@ -169,7 +169,8 @@ For the future, I would ...(complete)
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
 
 ## Testing
-![Lighthouse](https://developer.chrome.com/docs/lighthouse/overview)<br>
+An excellent tool to use, hidden in Google is [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview). Lighthouse is an open-source, automated tool to help you improve the quality of web pages. <br>
+It shows you where to improve in 4 sections: Performance, Accessibility, Best practices and SEO
 ![Lighthouse](docs/)
 
 <hr>
@@ -190,12 +191,13 @@ Supplemental learning resources directly used/ referenced within the project:
 - [Gemini](https://gemini.google.com) as a learning tool, no code was directly used
 - [Cloudinary](https://cloudinary.com/tools/image-to-webp) to convert images from jpg to webp
 - [Deep Seek](https://chat.deepseek.com/) AI Chatbot which had a feature that went more in depth, with the chance of looking at the "thought process" before offering a solution.
+- []()
 
 <hr>
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
 
 ### Content Research
-When thinking about the name for the blog, and how in particular it can make a story in the lyrics, and how many people can be attracted to the sounds/ lyrics when there are street buskers (for example), I had the thought about the Pied Piper, a story from childhood about at first luring away a problem for villagers, who then eventually (unfortunately for the story), lured away the villagers children. The decision to use "Lyric Lure" was aimed at drawing visitors to the site to talk all things music, imitating the story of the Pied Piper, (without the dark twist) which also then led to using the logo photo [seen here](static/images/apple-touch-icon.png). 
+When thinking about the name for the blog, and how in particular it can make a story in the lyrics, and how many people can be attracted to the sounds/ lyrics when there are street buskers (for example), I had the thought about the Pied Piper, a story from childhood about at first luring away a problem for villagers, who then eventually (unfortunately for the story), lured away the villagers children. The decision to use "Lyric Lure" was aimed at drawing visitors to the site to talk all things music, imitating the story of the Pied Piper, (without the dark twist) which also then led to using the logo photo [seen here](static/images/android-chrome-512x512.webp) - a quick note, this colour was inverted, to help accesibility for the webpage logo. 
 
 <hr>
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
@@ -203,7 +205,7 @@ When thinking about the name for the blog, and how in particular it can make a s
 ### Acknowledgments
 
 A huge thank you to Kirsten for input in the colour schemes,<br>
-To the people on [Reddit]() and [Quora](https://www.quora.com/What-colour-or-colours-do-you-associate-with-music) (Particulary these posts) for offering their input as to how music sounds/ looks to them. An interesting insight into those who experience Synesthesia
+To the people on [Reddit]() and [Quora](https://www.quora.com/What-colour-or-colours-do-you-associate-with-music) (Particulary these posts) for offering their input as to how music sounds/ looks to them. An interesting insight into those who experience Synesthesia which led to others commenting their experiences and ultimately leading to the colours I used.
 
 <hr>
 <p align="right"><a href="#lyric-lure">Back To Top</a></p>
